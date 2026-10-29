@@ -1,0 +1,12 @@
+services:
+
+  reto-tecnico:
+
+    build: .
+
+    container_name: reto-tecnico
+
+    ports:
+      - "8080:8080"
+
+    restart: unless-stopped

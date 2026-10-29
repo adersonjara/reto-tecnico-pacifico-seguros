@@ -1,0 +1,28 @@
+spring:
+
+  application:
+    name: customer-service
+
+  r2dbc:
+    url: r2dbc:h2:file:///./data/customerdb
+    username: sa
+    password:
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+  api-docs:
+    path: /api-docs
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
