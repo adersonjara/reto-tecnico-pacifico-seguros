@@ -209,20 +209,20 @@ components:
 
         firstName:
           type: string
-          example: Aderson
+          example: "Aderson"
 
         lastName:
           type: string
-          example: Jara
+          example: "Jara"
 
         email:
           type: string
           format: email
-          example: aderson@empresa.com
+          example: "aderson@gmail.com"
 
         phone:
           type: string
-          example: "999999999"
+          example: "987654893"
 
     CustomerResponse:
 
@@ -237,20 +237,20 @@ components:
 
         firstName:
           type: string
-          example: Aderson
+          example: "Aderson"
 
         lastName:
           type: string
-          example: Jara
+          example: "Jara"
 
         email:
           type: string
           format: email
-          example: aderson@empresa.com
+          example: "aderson@gmail.com"
 
         phone:
           type: string
-          example: "999999999"
+          example: "987654893"
 
         active:
           type: boolean

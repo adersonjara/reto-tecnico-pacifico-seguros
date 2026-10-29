@@ -36,6 +36,7 @@ public class CustomerServiceImpl implements CustomerService {
     public Flux<CustomerResponse> findAll() {
 
         return repository.findAll()
+                .filter(customer -> Boolean.TRUE.equals(customer.getActive()))
                 .map(mapper::toResponse);
     }
 
@@ -84,6 +85,11 @@ public class CustomerServiceImpl implements CustomerService {
                     customer.setPhone(
                             Optional.ofNullable(request.phone())
                                     .orElse(customer.getPhone())
+                    );
+
+                    customer.setActive(
+                            Optional.ofNullable(request.active())
+                                    .orElse(customer.getActive())
                     );
 
                     return repository.save(customer);

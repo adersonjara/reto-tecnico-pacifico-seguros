@@ -14,7 +14,9 @@ public record CustomerRequest(
         @Email(message = "Invalid email")
         String email,
 
-        String phone
+        String phone,
+
+        Boolean active
 
 ) {
 }
