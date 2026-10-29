@@ -2,6 +2,15 @@
 
 Microservicio reactivo para gestionar clientes, desarrollado con Java 21, Spring Boot 3.3.5, Spring WebFlux, Spring Data R2DBC y base de datos H2.
 
+## Repositorio
+
+Puedes clonar o descargar el proyecto directamente desde GitHub usando el siguiente enlace:
+
+```bash
+git clone https://github.com/adersonjara/reto-tecnico-pacifico-seguros.git
+cd reto-tecnico-pacifico-seguros
+```
+
 ## Requisitos
 
 - Java 21 para ejecutar la aplicación localmente.
